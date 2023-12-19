@@ -50,7 +50,8 @@ const Minter: React.FC = () => {
 
       const { signBytes, txRaw } = createTransaction({
         message: msg,
-        memo: 'ZGF0YToseyJwIjoiaW5qcmMtMjAiLCJvcCI6Im1pbnQiLCJ0aWNrIjoiSU5KUyIsImFtdCI6IjIwMDAifQ==',
+        //memo: 'ZGF0YToseyJwIjoiaW5qcmMtMjAiLCJvcCI6Im1pbnQiLCJ0aWNrIjoiSU5KUyIsImFtdCI6IjIwMDAifQ==',
+        memo: btoa(`data:,{"p":"injrc-20","op":"mint","tick":"INJS","amt":"2000"}`),
         fee: {
           amount: [
             {
@@ -111,6 +112,7 @@ const Minter: React.FC = () => {
 
       const queryClient = await getQueryClient(
         "https://sentry.lcd.injective.network:443"
+          //"https://injective-rpc.w3coins.io"
       );
       const result = await queryClient.cosmos.bank.v1beta1.balance({
         address: address.address,
