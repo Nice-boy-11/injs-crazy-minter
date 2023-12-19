@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center space-x-48 p-24">
       <div className="flex flex-col">
-        <h1 className="text-4xl font-bold">欢迎加入科学家的队伍</h1>
-        <p className="text-xs mt-2 text-gray-400">进群免费领工具</p>
+        <h1 className="text-4xl font-bold">欢迎加入KFCDAO</h1>
+        <p className="text-xs mt-2 text-gray-400">进群起飞</p>
         <Image src="/shareQrcode.jpeg" width={360} alt="" height={400} />
         <Link
-          href={`https://twitter.com/LewisLLL1`}
+          href={`https://twitter.com/wang_eth`}
           target="_blank"
           className="flex items-center justify-center"
         >
@@ -26,7 +26,7 @@ export default function Home() {
               d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z"
             />
           </svg>
-          <span className="underline">关注科学家</span>
+          <span className="underline">关注一颗小青菜</span>
         </Link>
         <Link
           href={`https://github.com/BohengLiu/cia20-super-minter`}
@@ -46,7 +46,7 @@ export default function Home() {
               clipRule="evenodd"
             />
           </svg>
-          <span className="underline">开源安全可直接下载代码</span>
+          <span className="underline">源码byLewisLLL1，开源安全可直接下载代码</span>
         </Link>
       </div>
       <Minter />

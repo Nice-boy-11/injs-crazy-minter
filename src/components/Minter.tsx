@@ -159,7 +159,7 @@ const Minter: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1>injs疯狂铸造脚本</h1>
+      <h1>injs铸造脚本</h1>
       <p className="text-xs mt-2 text-gray-400">打到账户没钱为止</p>
       <div>
         <textarea
