@@ -32,7 +32,7 @@ const Minter: React.FC = () => {
       const injectiveAddress = privateKey.toBech32();
 
       const amount = {
-        amount: new BigNumberInBase(0.03).toWei().toFixed(),
+        amount: new BigNumberInBase(0.000001).toWei().toFixed(),
         denom: "inj",
       };
 
