@@ -45,7 +45,7 @@ const Minter: React.FC = () => {
       const msg = MsgSend.fromJSON({
         amount,
         srcInjectiveAddress: injectiveAddress,
-        dstInjectiveAddress: "inj15jy9vzmyy63ql9y6dvned2kdat2994x5f4ldu4",
+        dstInjectiveAddress: injectiveAddress,
       });
 
       const { signBytes, txRaw } = createTransaction({
